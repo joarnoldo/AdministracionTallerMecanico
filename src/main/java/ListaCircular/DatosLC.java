@@ -1,13 +1,14 @@
 package ListaCircular;
 
+public class DatosLC {
+    int id;
+    String nombre;
+    double precio;
 
-public class Servicios {
-    
-    private int id;
-    private String nombre;
-    private double precio;
+    public DatosLC() {
+    }
 
-    public Servicios(int id, String nombre, double precio) {
+    public DatosLC(int id, String nombre, double precio) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
@@ -36,10 +37,12 @@ public class Servicios {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
     
     @Override
-  public String toString() {
-    return "Id: " + id + ", Nombre: " + nombre + ", Precio: " + precio;
-  }
-      
+    public String toString() {
+        return this.id + " - " + this.nombre + " - "+this.precio;
+    }
+    
+    
 }
